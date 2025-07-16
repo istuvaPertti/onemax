@@ -2,8 +2,8 @@ import random
 import string
 
 target = "HELLO WORLD"
-population_size = 15
-max_generations = 5000
+population_size = 20
+max_generations = 10000
 mutation_chance = 0.01
 
 def random_character():
@@ -32,7 +32,6 @@ for generation in range(max_generations):
   
     if best == target:
         print("\n jee!")
-        print(population)
         break
 
     next_generation = population[:10]
