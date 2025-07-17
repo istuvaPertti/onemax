@@ -1,9 +1,9 @@
 import random
 import string
 
-target = "HELLO WORLD"
-population_size = 20
-max_generations = 10000
+target = "FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF"
+population_size = 11
+max_generations = 10000000000000
 mutation_chance = 0.01
 
 def random_character():
