@@ -1,5 +1,6 @@
 import random
 import string
+from tdqm import tdqm
 
 target = "FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF"
 population_size = 11
@@ -24,7 +25,7 @@ def crossover(parent1,parent2):
 
 population = [random_string(len(target))for _ in range(population_size)]
 
-for generation in range(max_generations):
+for generation in trange(max_generations):
     population.sort(key = fitness,reverse = True)
 
     best = population[0]
